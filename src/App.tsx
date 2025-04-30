@@ -1,5 +1,8 @@
 import AppRoutes from "./components/AppRoutes"
+
+import Footer from "./components/Foot"
 import Header from "./components/Head"
+
 import NavBar from "./components/NavBar"
 
 function App() {
@@ -9,6 +12,7 @@ function App() {
     <Header/>
     <NavBar/>
       <AppRoutes/>
+      <Footer/>
     </>
   )
 }
