@@ -26,7 +26,7 @@ const Footer = () => {
      
         <Box textAlign="center">
           <Heading fontWeight="bold" size="md" mb={4}>Contact Us</Heading>
-          <Text>Email: groupTwo@gmail.com</Text>
+          <Text>Email: grouptwo@gmail.com</Text>
           <Text>Phone: +975-12345678</Text>
           <Text>Address: Tsirang, Bhutan</Text>
           <Text>Location: Damphu Municipal Hall</Text>
