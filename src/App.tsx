@@ -1,14 +1,12 @@
-import { Button, HStack } from "@chakra-ui/react"
+import AppRoutes from "./components/AppRoutes"
+import NavBar from "./components/NavBar"
 
 function App() {
 
   return (
     <>
-     <HStack>
-      <Button>Click me</Button>
-      <Button>Click me</Button>
-    </HStack>
-
+    <NavBar/>
+      <AppRoutes/>
     </>
   )
 }
