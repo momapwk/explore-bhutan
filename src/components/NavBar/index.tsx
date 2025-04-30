@@ -22,7 +22,7 @@ const NavBar: React.FC = () => {
         {navItems.map((item) => (
           <Link
             as={NavLink}
-            target={item.target}
+        href={item.target}
             key={item.target}
             color="white"
             textDecoration="none"
