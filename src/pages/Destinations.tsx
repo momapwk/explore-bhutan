@@ -1,7 +1,10 @@
+import BhutanDestinations from "../components/Destinations"
 
 const Destinations = () => {
   return (
-    <div>Destinations</div>
+    <div>
+      <BhutanDestinations/>
+    </div>
   )
 }
 
