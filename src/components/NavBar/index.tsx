@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
@@ -18,14 +19,21 @@ const navItems = [
 
 const NavBar: React.FC = () => {
  
+
   return (
     <Box as="header" bg="black" py={8} px={10}>
-      <Flex justify="center" gap={30} wrap="wrap">
+      <Flex justify="center" gap={10} wrap="wrap">
         {navItems.map((item) => (
           <NavLink
-            key={item.target}
-            to={item.target}
-            style={{color:"white", fontWeight:"bold"}}
+
+            key={item.to}
+            to={item.to}
+            style={({ isActive }) => ({
+              textDecoration: isActive ? 'underline' : 'none',
+              color: isActive ? '#81E6D9' : 'white',
+              fontWeight: isActive ? 'bold' : 'normal',
+            })}
+
           >
             <Flex align="center" gap={2}>
               <Image src={item.icon} alt={item.alt} boxSize="30px" borderRadius="full" />
@@ -35,7 +43,7 @@ const NavBar: React.FC = () => {
         ))}
       </Flex>
     </Box>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
