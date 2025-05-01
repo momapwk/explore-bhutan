@@ -6,7 +6,7 @@ export default function BhutanTravelInfo() {
     <Box
       w="full"
       minH="100vh"
-      backgroundImage={`url(${visa})`} // ← use the imported image here
+      backgroundImage={`url(${visa})`} 
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
