@@ -1,4 +1,5 @@
 import AppRoutes from "./components/AppRoutes"
+import BhutanDestinations from "./components/Destinations"
 
 import Footer from "./components/Foot"
 import Header from "./components/Head"
@@ -12,6 +13,7 @@ function App() {
     <Header/>
     <NavBar/>
       <AppRoutes/>
+      <BhutanDestinations/>
       <Footer/>
     </>
   )
