@@ -6,8 +6,8 @@ import dragon2 from '../../assets/Image/dragon2.jpeg'
 const Footer = () => {
   return (
     <Box
-      bg="gray.900"
-      color="white"
+      bg="cyan.200"
+      color="black"
       py={8}
       width="100%"
     >
@@ -63,7 +63,7 @@ const Footer = () => {
             </Link>
           </HStack>
 
-          <Text mt={4} fontSize="sm" color="white">
+          <Text mt={4} fontSize="sm" color="black">
             ©2025 All rights reserved.
           </Text>
         </Box>

@@ -37,7 +37,7 @@ const Welcome = () => {
           Explore Bhutan
         </Heading>
 
-        <Text fontSize="lg" mb={6} color={'gray.400'}>
+        <Text fontSize="lg" mb={6} color={'black'}>
           “Happiness is a place — welcome to the kingdom where nature, peace, and culture thrive together.”
           <br />
           To explore more about Bhutan, read the passage below.
@@ -47,7 +47,7 @@ const Welcome = () => {
           Bhutan: A Happy and Peaceful Country
         </Heading>
 
-        <Text fontSize="lg" color={'gray'} lineHeight="taller">
+        <Text fontSize="lg" color={'black'} lineHeight="taller">
           Bhutan is a small country in the mountains, between India and China. Even though it is not very big,
           Bhutan is known around the world for being peaceful, clean, and full of happy people.
           <br /><br />

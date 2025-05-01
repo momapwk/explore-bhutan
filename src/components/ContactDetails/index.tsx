@@ -19,15 +19,15 @@ const ContactDetails = () => {
     <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }} gap={6} maxW="lg" w="full">
       <Box {...cardProps}>
         <Icon as={MdLocationOn} boxSize={8} color="cyan.600" />
-        <Heading size="sm" mt={4}>OUR MAIN OFFICE</Heading>
-        <Text fontSize="sm" mt={2}>Damphu Municipal Office</Text>
+        <Heading size="sm" mt={4}>OUR OFFICE LOCATION</Heading>
+        <Text fontSize="sm" mt={2}>2nd floor of Damphu Municipal Office</Text>
         <Text fontSize="sm">Tsirang, Bhutan</Text>
       </Box>
 
       <Box {...cardProps}>
         <Icon as={MdPhone} boxSize={8} color="cyan.600" />
         <Heading size="sm" mt={4}>PHONE NUMBER</Heading>
-        <Text fontSize="sm" mt={2}>+975-77490169</Text>
+        <Text fontSize="sm" mt={2}>+975-12345678</Text>
       </Box>
 
       <Box {...cardProps}>

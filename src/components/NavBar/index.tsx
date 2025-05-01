@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
  
 
   return (
-    <Box as="header" bg="black" py={8} px={10}>
+    <Box as="header" bg="cyan.200" py={8} px={10}>
       <Flex justify="center" gap={10} wrap="wrap">
         {navItems.map((item) => (
           <NavLink
@@ -30,7 +30,7 @@ const NavBar: React.FC = () => {
             to={item.target}
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
-              color: isActive ? '#81E6D9' : 'white',
+              color: isActive ? 'red' : 'black',
               fontWeight: isActive ? 'bold' : 'normal',
             })}
 
