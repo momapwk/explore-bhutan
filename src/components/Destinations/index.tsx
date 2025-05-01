@@ -97,7 +97,7 @@ const BhutanDestinations = () => {
         />
       </Box>
 
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap='4'>
         {filteredDestinations.map((place) => (
           <Box
             key={place.name}
