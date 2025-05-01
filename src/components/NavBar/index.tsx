@@ -26,8 +26,8 @@ const NavBar: React.FC = () => {
         {navItems.map((item) => (
           <NavLink
 
-            key={item.to}
-            to={item.to}
+            key={item.target}
+            to={item.target}
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
               color: isActive ? '#81E6D9' : 'white',
