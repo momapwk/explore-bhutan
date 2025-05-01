@@ -5,6 +5,8 @@ import Header from "./components/Head"
 
 import NavBar from "./components/NavBar"
 
+
+
 function App() {
 
   return (
@@ -12,6 +14,7 @@ function App() {
     <Header/>
     <NavBar/>
       <AppRoutes/>
+     
       <Footer/>
     </>
   )
