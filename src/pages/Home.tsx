@@ -1,9 +1,9 @@
-import Welcome from "../components/Welcome"
+import Welcome from '../components/Welcome'
 
 const Home = () => {
   return (
     <div>
-        <Welcome />
+      <Welcome />
     </div>
   )
 }
