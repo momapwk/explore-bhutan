@@ -10,6 +10,8 @@ function App() {
   return (
     <>
     <Header/>
+    
+
     <NavBar/>
       <AppRoutes/>
       <Footer/>

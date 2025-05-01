@@ -1,7 +1,11 @@
+import { Box } from "@chakra-ui/react"
+import Festival from "../components/Festival/indes"
 
 const CultureFestivals = () => {
   return (
-    <div>CultureFestivals</div>
+    <Box>
+      <Festival/>
+    </Box>
   )
 }
 
