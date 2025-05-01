@@ -5,7 +5,12 @@ import dragon2 from '../../assets/Image/dragon2.jpeg'
 
 const Footer = () => {
   return (
-    <Box as="footer" bg="black" color="white" py={15} width="100%" mt={15}>
+    <Box
+      bg="gray.900"
+      color="white"
+      py={8}
+      width="100%"
+    >
       <Flex
         maxW="100%"
         mx="auto"
