@@ -1,4 +1,5 @@
 
+
 import React from 'react'
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
@@ -46,4 +47,5 @@ const NavBar: React.FC = () => {
   );
 };
 
-export default NavBar;
+
+
