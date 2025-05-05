@@ -11,19 +11,27 @@ const navItems = [
   { to: '/culturefestival', label: 'Culture Festival' },
 ];
 
+
+
+
+
 const NavBar: React.FC = () => {
+ 
+
   return (
     <Box as="header" bg="black" py={8} px={10}>
       <Flex justify="center" gap={10} wrap="wrap">
         {navItems.map((item) => (
           <NavLink
-            key={item.to}
-            to={item.to}
+
+            key={item.target}
+            to={item.target}
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
-              color: isActive ? '#81E6D9' : 'white',
+              color: isActive ? 'red' : 'white',
               fontWeight: isActive ? 'bold' : 'normal',
             })}
+
           >
             <Flex align="center" gap={2}>
               <Text>{item.label}</Text>
