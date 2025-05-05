@@ -1,51 +1,49 @@
-import {Button,Field,Fieldset,Stack,Input,Textarea,Box,Center,} from "@chakra-ui/react"
+import { Box, Button, Heading, Input, Stack, Textarea } from "@chakra-ui/react"
+import { useRef } from "react"
+import emailjs from "@emailjs/browser"
+import { toast } from "react-toastify"
+import { motion } from "framer-motion"
 
-import backgroundImage from '../../assets/Image/contact.jpeg'
+const MotionBox = motion(Box)
 
 const ContactForm = () => {
+  const formRef = useRef<HTMLFormElement | null>(null)
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    if (!formRef.current) return
+
+    emailjs.sendForm("service_xky3dqu", "template_7ypyrla", formRef.current, "o6l8r1UilREkWtFPn")
+      .then(() => {
+        toast.success("Message sent successfully!")
+        formRef.current?.reset()
+      })
+      .catch(() => {
+        toast.error("Failed to send message.")
+      })
+  }
+
   return (
-    <Box
-      bgImage={`url(${backgroundImage})`}
-      bgSize="cover"
-      position="center"
-      minH="100vh"
-      py={20}
+    <MotionBox
+      bg="cyan.200"
+      p={10}
+      borderRadius="md"
+      shadow="lg"
+      w="full"
+      maxW="lg"
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
     >
-      <Center h="100%">
-        <Box bg="whiteAlpha.900" border="1px solid" borderColor="black" borderRadius="lg" p="10px" maxW="md" w="full"
-        >
-          <Fieldset.Root size="lg">
-            <Stack>
-              <Fieldset.Legend>Contact Information</Fieldset.Legend>
-              <Fieldset.HelperText>
-                Please submit your contact information below.
-              </Fieldset.HelperText>
-            </Stack>
-
-            <Fieldset.Content>
-              <Field.Root>
-                <Field.Label>Name</Field.Label>
-                <Input name="name" />
-              </Field.Root>
-
-              <Field.Root>
-                <Field.Label>Email address</Field.Label>
-                <Input name="email" type="email" />
-              </Field.Root>
-
-              <Field.Root>
-                <Field.Label>Message</Field.Label>
-                <Textarea name="message" />
-              </Field.Root>
-            </Fieldset.Content>
-
-            <Button type="submit" alignSelf="flex-start" mt={5}>
-              Submit
-            </Button>
-          </Fieldset.Root>
-        </Box>
-      </Center>
-    </Box>
+      <Heading size="lg" mb={6} color="black" textAlign="left">Contact Us</Heading>
+      <form ref={formRef} onSubmit={sendEmail}>
+        <Stack spaceX={4}>
+          <Input placeholder="Enter your Name" name="user_name" bg="white" required />
+          <Input placeholder="Enter a valid email address" type="email" name="user_email" bg="white" required />
+          <Textarea placeholder="Your Message" name="message" bg="white" rows={5} required />
+          <Button type="submit" colorScheme="blue" mt={2} w="fit-content">Submit</Button>
+        </Stack>
+      </form>
+    </MotionBox>
   )
 }
 
