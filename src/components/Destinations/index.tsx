@@ -164,7 +164,7 @@ const BhutanDestinations = () => {
         )}
       </SimpleGrid>
     </Box>
-  );
-};
+  )
+}
 
-export default BhutanDestinations;
+export default BhutanDestinations
