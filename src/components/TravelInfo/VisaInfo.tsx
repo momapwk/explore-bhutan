@@ -1,19 +1,11 @@
-import { Box, Heading, Text, Stack, Image } from "@chakra-ui/react";
-import visa from '../../assets/Image/visa.jpeg'; // Adjust path if needed
+import { Box, Heading, Text, Stack, Image, Center } from "@chakra-ui/react"
+
 
 export default function BhutanTravelInfo() {
   return (
-    <Box
-      w="full"
-      minH="100vh"
-      backgroundImage={`url(${visa})`} 
-      backgroundSize="cover"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
-      p={6}
-    >
+    
       <Box w="10/12" mx="auto" bg="whiteAlpha.800" p={6} borderRadius="md">
-        <Stack gap={6} textAlign="left">
+        <Stack gap={6} textAlign="Center">
           <Box>
             <Heading as="h3">Visa Process</Heading>
             <Text mt={2}>
@@ -25,7 +17,9 @@ export default function BhutanTravelInfo() {
           </Box>
 
           <Box>
-            <Image src={visa} alt="Visa application" borderRadius="md" mb={4} />
+          <Center>
+          <Image  src="https://www.tourinbhutan.com/wp-content/uploads/2019/03/bhutan-visa-info.jpg" alt="Visa" borderRadius="xl" />
+          </Center>
             <Heading as="h3">Daily Fee (SDF)</Heading>
             <Text mt={2}>
               Bhutan charges a Sustainable Development Fee (SDF) of <strong>$100 USD per person per night</strong>.
@@ -45,6 +39,6 @@ export default function BhutanTravelInfo() {
           </Box>
         </Stack>
       </Box>
-    </Box>
+   
   )
 }
