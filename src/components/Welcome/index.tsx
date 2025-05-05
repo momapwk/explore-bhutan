@@ -38,13 +38,14 @@ const Welcome = () => {
         </Heading>
 
 
-        <Text fontSize="lg" mb={6} color={'black'}>
+
+        <Text fontSize="lg" mb={6} color={'black'} textAlign={'center'}>
+
 
           “Happiness is a place — welcome to the kingdom where nature, peace, and culture thrive together.”
           <br />
           To explore more about Bhutan, read the passage below.
         </Text>
-
 
 
       </MotionBox>

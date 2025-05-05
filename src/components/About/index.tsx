@@ -1,3 +1,4 @@
+
 import { Box, Heading, Text, Stack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
@@ -47,3 +48,4 @@ const AboutIntro = () => {
 };
 
 export default AboutIntro;
+

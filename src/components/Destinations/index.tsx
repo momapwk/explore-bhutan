@@ -19,7 +19,10 @@ interface Destination {
 const destinations: Destination[] = [
   {
     name: "Paro Taktsang",
+
     image: "src/assets/Image/paro.png ",
+
+
     description:
       "Also known as Tiger’s Nest Monastery, perched on a cliffside in the Paro Valley.",
   },
