@@ -37,7 +37,6 @@ const Welcome = () => {
           Explore Bhutan
         </Heading>
 
-        <Text fontSize="lg" color={'black.400'} textAlign='center'>
 
         <Text fontSize="lg" mb={6} color={'black'}>
 
