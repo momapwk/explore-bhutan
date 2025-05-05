@@ -5,7 +5,11 @@ const MotionBox = motion(Box)
 
 const AboutIntro = () => {
   return (
-<MotionBox>
+<MotionBox
+   mt={10}
+   initial={{ opacity: 0, y: 20 }}
+   animate={{ opacity: 1, y: 0 }}
+   transition={{ duration: 0.8 }}>
 <Heading fontSize="xl" fontWeight="bold" mb={4}>
           Bhutan: A Happy and Peaceful Country
         </Heading>
