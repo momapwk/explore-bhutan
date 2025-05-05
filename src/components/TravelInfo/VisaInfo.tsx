@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Stack, Image, Center } from "@chakra-ui/react";
+import { Box, Heading, Text, Stack } from "@chakra-ui/react";
 
 export default function BhutanTravelInfo() {
   return (
@@ -13,9 +13,8 @@ export default function BhutanTravelInfo() {
       borderColor="gray.200"
     >
       <Stack gap={8}>
-        {/* Visa Process */}
         <Box>
-          <Heading as="h3" fontSize="2xl" fontWeight="bold" mb={2} textAlign={'center'}>
+          <Heading as="h3" fontSize="2xl" fontWeight="bold" mb={2} textAlign="center">
             Visa Process
           </Heading>
           <Text fontSize="lg">
@@ -26,21 +25,8 @@ export default function BhutanTravelInfo() {
           </Text>
         </Box>
 
-        <Box borderColor="gray.300" />
-
-        {/* Daily Fee */}
         <Box>
-          <Center mb={4}>
-            <Image
-              src="https://www.tourinbhutan.com/wp-content/uploads/2019/03/bhutan-visa-info.jpg"
-              alt="Visa"
-              borderRadius="xl"
-              width={'40%'}
-              maxH="300px"
-              objectFit="cover"
-            />
-          </Center>
-          <Heading as="h3" fontSize="2xl" fontWeight="bold" mb={2}>
+          <Heading as="h3" fontSize="2xl" fontWeight="bold" mb={2} textAlign="center">
             Daily Fee (SDF)
           </Heading>
           <Text fontSize="lg">
@@ -51,11 +37,8 @@ export default function BhutanTravelInfo() {
           </Text>
         </Box>
 
-        <Box borderColor="gray.300" />
-
-        {/* Travel Tips */}
         <Box>
-          <Heading as="h3" fontSize="2xl" fontWeight="bold" mb={2}>
+          <Heading as="h3" fontSize="2xl" fontWeight="bold" mb={2} textAlign="center">
             Travel Tips
           </Heading>
           <Text fontSize="lg">

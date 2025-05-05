@@ -4,12 +4,10 @@ const RegionWeather = () => {
   return (
     <Box p={6} width={'100%'} mx="auto">
       <Heading mb={6} size="2xl" textAlign="center">
-        Bhutan Weather by Region and Season
+        Bhutan Weather Widge
       </Heading>
 
-      <Heading size="xl" mb={4} textAlign="center">
-        Bhutan Weather by Season
-      </Heading>
+     
 
       <VStack gap={6} align="stretch">
       

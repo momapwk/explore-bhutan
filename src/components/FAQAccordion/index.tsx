@@ -82,14 +82,7 @@ const FAQSection: React.FC = () => {
       </Heading>
 
       {Object.entries(bhutanFAQs).map(([category, faqs]) => (
-        <Box
-          key={category}
-          p="6"
-          rounded="md"
-          border="1px solid gray"
-          borderRadius="xl"
-          m="4"
-        >
+        <Box key={category} p="4" rounded="md" m="4">
           {category !== "Travel" && (
             <Heading size="md" mb={4}>
               {category}
@@ -102,17 +95,13 @@ const FAQSection: React.FC = () => {
               <Box
                 key={index}
                 mb={4}
-                p={4}
-                border="1px solid"
-                borderColor="gray.200"
-                borderRadius="md"
-                bg="gray.50"
+                p={2}
                 onClick={() => toggleAnswer(category, index)}
-                _hover={{ bg: "gray.100", cursor: "pointer" }}
+                _hover={{ bg: "gray.50", cursor: "pointer" }}
               >
                 <Text fontWeight="medium">{faq.question}</Text>
                 {isOpen && (
-                  <Text fontSize="sm" mt={2}>
+                  <Text fontSize="sm" mt={1}>
                     {faq.answer}
                   </Text>
                 )}

@@ -4,6 +4,7 @@ import {
   Heading,
   Text,
   Stack,
+  SimpleGrid,
 } from '@chakra-ui/react';
 
 const packingList = [
@@ -69,31 +70,25 @@ const packingList = [
       'Headlamp or flashlight',
     ],
   },
-  {
-    category: 'Miscellaneous',
-    items: [
-      'Daypack for hikes',
-      'Sunglasses',
-      'Reusable water bottle',
-      'Travel journal',
-      'Snacks (energy bars, trail mix)',
-      'Ziplock bags or dry sacks',
-      'Umbrella or compact raincoat',
-    ],
-  },
+ 
 ];
 
 const BhutanPackingList: React.FC = () => {
   return (
-    <Box p={6} width={'100%'} mx="auto">
+    <Box p={6} width="100%" mx="auto" mb={16}>
       <Heading as="h1" size="xl" mb={8} textAlign="center">
         Bhutan Packing Checklist
       </Heading>
 
-      <Stack gap={6}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={12}>
         {packingList.map((section, index) => (
           <Box
             key={index}
+            mt={ 4 }
+            height="100%"
+            display="flex"
+            flexDirection="column"
+            justifyContent="space-between"
             border="1px solid"
             borderColor="gray.200"
             borderRadius="xl"
@@ -101,20 +96,36 @@ const BhutanPackingList: React.FC = () => {
             p={6}
             bg="white"
           >
-            <Heading as="h2" size="lg" color="teal.600" mb={1} fontWeight={'bold'}>
-              {section.category}
-            </Heading>
+            <Box>
+              <Heading
+                as="h2"
+                size="lg"
+                color="black"
+                mb={1}
+                fontWeight="bold"
+                textAlign="center"
+              >
+                {section.category}
+              </Heading>
 
-            <Box height="2px" bg="gray.400" mb={4} borderRadius="full" width={'90%'} margin={'auto'}/>
+              <Box
+                height="2px"
+                bg="gray.400"
+                mb={4}
+                borderRadius="full"
+                width="90%"
+                mx="auto"
+              />
 
-            <Stack gap={1} pl={2} fontSize={'lg'} width={'90%'} margin={'auto'}>
-              {section.items.map((item, itemIndex) => (
-                <Text key={itemIndex}>• {item}</Text>
-              ))}
-            </Stack>
+              <Stack gap={1} fontSize="lg" width="90%" >
+                {section.items.map((item, itemIndex) => (
+                  <Text key={itemIndex}>• {item}</Text>
+                ))}
+              </Stack>
+            </Box>
           </Box>
         ))}
-      </Stack>
+      </SimpleGrid>
     </Box>
   );
 };
