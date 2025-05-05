@@ -30,7 +30,7 @@ const NavBar: React.FC = () => {
             to={item.target}
             style={({ isActive }) => ({
               textDecoration: isActive ? 'underline' : 'none',
-              color: isActive ? '#81E6D9' : 'white',
+              color: isActive ? 'red' : 'white',
               fontWeight: isActive ? 'bold' : 'normal',
             })}
 
