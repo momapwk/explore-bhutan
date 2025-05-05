@@ -1,43 +1,51 @@
-import { Box, Heading, Text } from "@chakra-ui/react"
-import {motion} from 'framer-motion'
 
-const MotionBox = motion(Box)
+import { Box, Heading, Text, Stack } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+
+const MotionBox = motion(Box);
 
 const AboutIntro = () => {
   return (
-<MotionBox
-   mt={4}
-   initial={{ opacity: 0, y: 20 }}
-   animate={{ opacity: 1, y: 0 }}
-   transition={{ duration: 0.8 }}>
-<Heading fontSize="xl" fontWeight="bold" mb={4}>
-          Bhutan: A Happy and Peaceful Country
-        </Heading>
+    <MotionBox
+      mt={4}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      width={'90%'}
+      margin={"auto"}
+    >
+      <Heading fontSize="2xl" fontWeight="bold" mb={6}>
+        Bhutan: A Happy and Peaceful Country
+      </Heading>
 
-        <Text fontSize="lg" color={'black'} lineHeight="taller">
-          Bhutan is a small country in the mountains, between India and China. Even though it is not very big,
-          Bhutan is known around the world for being peaceful, clean, and full of happy people.
-          <br /><br />
-          One special thing about Bhutan is that it doesn’t just care about money. Instead of measuring success by how rich
-          the country is, Bhutan uses something called Gross National Happiness (GNH). This means the government works to
-          make sure people are healthy, safe, and happy.
-          <br /><br />
-          Bhutan is full of forests, rivers, and mountains. The people love nature and work hard to protect it. That’s why
-          Bhutan is one of the only countries in the world that takes in more pollution than it creates.
-          <br /><br />
-          Most people in Bhutan follow Buddhism, a peaceful religion. They celebrate many festivals, wear traditional clothes,
-          and live in colorful homes and villages. The king of Bhutan is also very kind and cares a lot about his people.
-          <br /><br />
-          Tourism in Bhutan is different from other places. Tourists must pay a special fee and travel with a guide. This helps
-          protect Bhutan’s culture and nature from too many visitors.
-          <br /><br />
-          In short, Bhutan is a beautiful and special country that shows the world how to live simply, happily, and with respect
-          for nature.
+      <Stack gap={5}>
+        <Text fontSize="lg" color="black">
+          Bhutan is a small country in the Himalayas, located between India and China. Though small in size, it is world-renowned for its peace, cleanliness, and the happiness of its people.
         </Text>
 
-</MotionBox>
+        <Text fontSize="lg" color="black">
+          Unlike many countries that focus on economic growth, Bhutan values well-being. It uses Gross National Happiness (GNH) to guide national progress—focusing on health, safety, and joy.
+        </Text>
 
-  )
-}
+        <Text fontSize="lg" color="black">
+          Nature plays a big role in Bhutanese life. With vast forests, rivers, and mountains, Bhutan is one of the few carbon-negative countries in the world, meaning it absorbs more carbon than it produces.
+        </Text>
 
-export default AboutIntro
+        <Text fontSize="lg" color="black">
+          Buddhism is the main religion, shaping a peaceful way of life. People wear traditional clothes, live in colorful homes, and celebrate vibrant festivals. The king is respected and deeply loved for his care and humility.
+        </Text>
+
+        <Text fontSize="lg" color="black">
+          Tourism is limited and sustainable. Visitors pay a daily fee and must travel with a guide—helping preserve Bhutan’s unique culture and natural environment.
+        </Text>
+
+        <Text fontSize="lg" color="black">
+          In short, Bhutan is a rare gem—a nation that values simplicity, happiness, and deep respect for nature and community.
+        </Text>
+      </Stack>
+    </MotionBox>
+  );
+};
+
+export default AboutIntro;
+

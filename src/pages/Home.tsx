@@ -1,4 +1,9 @@
 import AboutIntro from '../components/About'
+
+
+import TopDestination from '../components/Destination'
+import Testimonials from '../components/Testimonials'
+
 import Welcome from '../components/Welcome'
 
 const Home = () => {
@@ -7,6 +12,11 @@ const Home = () => {
       <Welcome />
 
       <AboutIntro />
+
+      <TopDestination />
+      
+      <Testimonials />
+
     </div>
   )
 }
