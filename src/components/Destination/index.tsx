@@ -59,7 +59,9 @@ Today, Trongsa Dzong remains a spiritual and historical landmark, offering panor
 const TopDestination = () => {
 
   return (
-    <Box p={4}>
+    <Box p={4}
+    width={'90%'}
+    margin={"auto"}>
       <Text fontSize="3xl" fontWeight="semibold" mb={8} textAlign="center">
         Top Destinations
       </Text>
@@ -91,7 +93,7 @@ const TopDestination = () => {
               <Text fontSize="2xl" fontWeight="bold" mb={2}>
                 {place.name}
               </Text>
-              <Text fontSize="md" color="gray.700" lineHeight="1.6">
+              <Text fontSize="lg" color="gray.700" lineHeight="1.6">
                 {place.description}
               </Text>
             </Box>

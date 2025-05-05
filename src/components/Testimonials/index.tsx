@@ -38,16 +38,14 @@ const testimonials = [
       name: "Chloe from France",
       quote: "The breathtaking views and untouched beauty made it my favorite destination ever.",
     },
-    {
-      name: "Noah from USA",
-      quote: "Bhutan is where I learned what real happiness looks like.",
-    }
+ 
   ];
 
 const Testimonials = () => {
 
   return (
-    <Box  py={12}  w={'100%'}>
+    <Box  py={12}    width={'90%'}
+    margin={"auto"}>
       <Box>
         <Text fontSize="3xl" fontWeight="bold" mb={10} textAlign="center" color="black">
           What Travelers Say
@@ -62,7 +60,7 @@ const Testimonials = () => {
               shadow="lg"
             >
               <VStack spaceX={4} textAlign="center">
-                <Text fontStyle="italic" color="black">
+                <Text fontStyle="italic" color="gray" fontSize={'lg'}>
                   “{t.quote}”
                 </Text>
                 <Text fontWeight="semibold" color="black">
