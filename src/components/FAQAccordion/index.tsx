@@ -1,13 +1,12 @@
-import React, { useState } from "react"
-import { Box, Heading, Text } from "@chakra-ui/react"
+import React, { useState } from "react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 
 const bhutanFAQs = {
   Travel: [
     {
       question: "Do I need a visa to visit Bhutan?",
       answer:
-        "Yes, all tourists (except Indian, Bangladeshi, and Maldivian nationals) need a visa arranged through a licensed Bhutanese tour operator."
-       
+        "Yes, all tourists (except Indian, Bangladeshi, and Maldivian nationals) need a visa arranged through a licensed Bhutanese tour operator.",
     },
     {
       question: "What is the best time to visit Bhutan?",
@@ -24,8 +23,6 @@ const bhutanFAQs = {
       answer:
         "Yes. As of 2024, the SDF is USD 100 per night for most tourists (reduced rates may apply for regional travelers).",
     },
-  ],
-  Food: [
     {
       question: "What is the national dish of Bhutan?",
       answer: "Ema Datshi (spicy chilies and cheese) is Bhutan’s most famous dish.",
@@ -43,8 +40,6 @@ const bhutanFAQs = {
       question: "Can I drink tap water in Bhutan?",
       answer: "It’s not recommended. Stick to bottled or boiled water.",
     },
-  ],
-  Money: [
     {
       question: "What currency is used in Bhutan?",
       answer:
@@ -64,35 +59,43 @@ const bhutanFAQs = {
       question: "Is tipping expected in Bhutan?",
       answer:
         "It’s not mandatory but is appreciated for guides, drivers, and hotel staff.",
-    }
-  ]
-}
+    },
+  ],
+};
 
 const FAQSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<{ [key: string]: number | null }>({
     Travel: null,
-    Food: null,
-    Money: null,
-  })
+  });
 
   const toggleAnswer = (category: string, index: number) => {
     setOpenIndex((prev) => ({
       ...prev,
       [category]: prev[category] === index ? null : index,
-    }))
-  }
+    }));
+  };
 
   return (
-    <Box maxW="3xl" mx="auto" py={8} px={4}>
+    <Box p="6" rounded="md" border="1px solid gray" borderRadius="xl" m="4">
       <Heading mb={6} textAlign="center">
         Bhutan Travel FAQ
       </Heading>
 
       {Object.entries(bhutanFAQs).map(([category, faqs]) => (
-        <Box key={category} mb={10}>
-          <Heading size="md" mb={4}>
-            {category}
-          </Heading>
+        <Box
+          key={category}
+          p="6"
+          rounded="md"
+          border="1px solid gray"
+          borderRadius="xl"
+          m="4"
+        >
+          {category !== "Travel" && (
+            <Heading size="md" mb={4}>
+              {category}
+            </Heading>
+          )}
+
           {faqs.map((faq, index) => {
             const isOpen = openIndex[category] === index;
             return (
@@ -114,12 +117,12 @@ const FAQSection: React.FC = () => {
                   </Text>
                 )}
               </Box>
-            )
+            );
           })}
         </Box>
       ))}
     </Box>
-  )
-}
+  );
+};
 
-export default FAQSection
+export default FAQSection;

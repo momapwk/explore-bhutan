@@ -2,7 +2,7 @@ import { Box, Heading, Text, VStack, Image, Flex } from "@chakra-ui/react"
 
 const RegionWeather = () => {
   return (
-    <Box p={6} maxW="7xl" mx="auto">
+    <Box p={6} width={'100%'} mx="auto">
       <Heading mb={6} size="2xl" textAlign="center">
         Bhutan Weather by Region and Season
       </Heading>
