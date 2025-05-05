@@ -36,7 +36,7 @@ const ContactForm = () => {
     >
       <Heading size="lg" mb={6} color="black" textAlign="left">Contact Us</Heading>
       <form ref={formRef} onSubmit={sendEmail}>
-        <Stack spaceX={4}>
+        <Stack gap={4}>
           <Input placeholder="Enter your Name" name="user_name" bg="white" required />
           <Input placeholder="Enter a valid email address" type="email" name="user_email" bg="white" required />
           <Textarea placeholder="Your Message" name="message" bg="white" rows={5} required />
