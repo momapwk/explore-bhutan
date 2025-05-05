@@ -1,4 +1,5 @@
 import AboutIntro from '../components/About'
+import TopDestination from '../components/Destination'
 import Welcome from '../components/Welcome'
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
       <Welcome />
 
       <AboutIntro />
+      <TopDestination />
     </div>
   )
 }
