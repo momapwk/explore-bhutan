@@ -48,7 +48,7 @@ const OverAllCultureFestivals = () => {
   ];
 
   return (
-    <Box>
+    <Box width={'90'}>
     
       <Box position="relative" px={4} py={6}>
         <SimpleGrid columns={{ base: 2, md: 4 }} gap={2}>
@@ -81,9 +81,20 @@ const OverAllCultureFestivals = () => {
           zIndex="10"
         >
           <Heading fontSize={{ base: "lg", md: "2xl" }}>
-            Over All Bhutan Tsechu Festival
+            Over All Bhutan Tsechu Festivals
           </Heading>
+          <Box flex="2">
+            <Image
+              src="/src/assets/Image/mask.jpg"
+              alt="Bhutanese festival mask dance"
+              borderRadius="lg"
+              objectFit="cover"
+              w="90%"
+              h="100%"
+            />
+          </Box>
         </Box>
+       
       </Box>
 
       <Box p={10} bg="gray.50">

@@ -8,7 +8,7 @@ import {
   
   const BhutanCulturalInfo = () => {
     return (
-      <Box maxW="6xl" mx="auto" p={6}>
+      <Box width={'90%'} mx="auto" p={6}>
         <Flex direction={{ base: "column", md: "row" }} gap={6}>
      
           <Box flex="2">

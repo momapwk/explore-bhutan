@@ -18,7 +18,7 @@ const imageData = [
 
 const DromchoePage = () => {
   return (
-    <Box maxW="6xl" mx="auto" p={{ base: 4, md: 8 }}>
+    <Box width={'90%'} mx="auto" p={{ base: 4, md: 8 }}>
       <VStack gap={4} align="start">
         <Heading size="2xl">Annual Dromchoe</Heading>
         <Text fontSize="lg" fontStyle="italic" color="gray.600">
