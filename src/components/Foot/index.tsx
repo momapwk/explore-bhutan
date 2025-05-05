@@ -6,8 +6,8 @@ import dragon2 from '../../assets/Image/dragon2.jpeg'
 const Footer = () => {
   return (
     <Box
-      bg="cyan.200"
-      color="black"
+      bg="black"
+      color="white"
       py={8}
       width="100%"
     >
