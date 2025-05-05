@@ -47,7 +47,7 @@ const ContactForm = () => {
             required
           />
           <Textarea placeholder="Your Message" name="message" bg="white" rows={5} required />
-          <Button colorScheme="gray" mt={2} w="fit-content" type="submit">
+          <Button bg="gray"  mt={2} w="fit-content" type="submit">
             Submit
           </Button>
         </Stack>
