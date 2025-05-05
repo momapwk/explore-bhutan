@@ -46,31 +46,36 @@ const destinations: Destination[] = [
   },
   {
   name: "Bumthang Valley",
-    image: "src/assets/Image/bumthangv.jpg ",
+    image: 
+      "src/assets/Image/bumthangv.jpg ",
     description:
       "The spiritual heartland of Bhutan with ancient temples and beautiful landscapes.",
   },
   {
     name: "Haa Valley",
-    image: "src/assets/Image/haav.jpg",
+    image: 
+      "src/assets/Image/haav.jpg",
     description:
       "A quiet, less-traveled valley known for its natural beauty and authentic Bhutanese culture.",
   },
   {
     name: "Trongsa Dzong",
-    image: "src/assets/Image/trongsaD.jpg",
+    image: 
+      "src/assets/Image/trongsaD.jpg",
     description:
       "A massive and strategically located fortress in central Bhutan, offering panoramic views.",
   },
   {
     name: "Lhuentse",
-    image: "src/assets/Image/lhuentse.jpg",
+    image: 
+      "src/assets/Image/lhuentse.jpg",
     description:
       "A remote and traditional region known for beautiful weavings and sacred sites.",
   },
   {
     name: "Chele La Pass",
-    image: "src/assets/Image/chelelapass.jpg",
+    image: 
+      "src/assets/Image/chelelapass.jpg",
     description:
       "The highest motorable point in Bhutan, offering dramatic views of the Himalayan range.",
   },
@@ -85,7 +90,7 @@ const BhutanDestinations = () => {
 
   return (
     <Box p={[4, 8]}>
-      <Heading mb={4} textAlign="center" color="teal.600">
+      <Heading mb={4} textAlign="center" color="black">
         Top Destinations in Bhutan
       </Heading>
 
@@ -97,7 +102,7 @@ const BhutanDestinations = () => {
         />
       </Box>
 
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap='4'>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap={4}>  
         {filteredDestinations.map((place) => (
           <Box
             key={place.name}
@@ -112,7 +117,7 @@ const BhutanDestinations = () => {
               alt={`Image of ${place.name}`}
               height="300px"
               width="100%"
-              objectFit="cover"
+              objectFit=''
             />
             <Stack p={4}>
               <Heading fontSize="xl" color="gray.700">
