@@ -25,17 +25,17 @@ const DromchoePage = () => {
           The Great Punakha Dromchoe
         </Text>
 
-        <Text fontSize="md" textAlign="justify">
+        <Text fontSize="lg" textAlign="justify" >
           The Punakha Dromchoe is a dramatic recreation of a 17th-century battle against the Tibetan army.
           Local militia men, known as <strong>“pazaps”</strong>, dress in traditional battle gear to reenact this historic event.
         </Text>
 
-        <Text fontSize="md" textAlign="justify">
+        <Text fontSize="lg" textAlign="justify">
           This reenactment reflects a time when Bhutan had no standing army. Instead, men from the eight <strong>Tshogchens</strong>
           (great village blocks) of Thimphu and Punakha rose up and successfully repelled the invading forces.
         </Text>
 
-        <Text fontSize="md" textAlign="justify">
+        <Text fontSize="lg" textAlign="justify">
           Their victory marked the beginning of internal peace and stability. The ceremony concludes with the
           immersion of a sacred relic into the Mochhu River, witnessed by hundreds of people gathered for the event.
         </Text>
