@@ -1,5 +1,5 @@
 import { Box, Image, Stack, Text, Flex } from '@chakra-ui/react';
-import paro from '../../assets/Image/paro.png'
+import paro from '../../assets/Image/paro.jpg'
 import PD from '../../assets/Image/PD.jpg'
 import Tt from '../../assets/Image/Tt.jpg'
 import trongsaD from '../../assets/Image/trongsaD.jpg'
