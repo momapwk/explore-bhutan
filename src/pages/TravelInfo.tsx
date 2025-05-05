@@ -1,7 +1,14 @@
+import {Box} from "@chakra-ui/react"
+
+import BhutanTravelInfo from "../components/TravelInfo/VisaInfo"
 
 const TravelInfo = () => {
   return (
-    <div>TravelInfo</div>
+    <div>
+      <Box>
+      <BhutanTravelInfo />
+      </Box>
+    </div>
   )
 }
 

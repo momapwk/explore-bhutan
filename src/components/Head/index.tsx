@@ -6,8 +6,8 @@ const Header = () => {
       as="header"
       bg="black"
       color="white"
-      py={4}
-      px={6}
+      py={8}
+      px={10}
       textAlign="center"
       boxShadow="md"
     >

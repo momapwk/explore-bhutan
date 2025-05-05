@@ -1,9 +1,17 @@
+import { ToastContainer } from 'react-toastify';
+
+
 import AppRoutes from "./components/AppRoutes"
 
-import Footer from "./components/Foot"
+
 import Header from "./components/Head"
 
-// import NavBar from "./components/NavBar"
+
+import NavBar from "./components/NavBar"
+import Footer from "./components/Foot"
+
+
+
 
 function App() {
 
@@ -12,7 +20,9 @@ function App() {
     <Header/>
     {/* <NavBar/> */}
       <AppRoutes/>
+     
       <Footer/>
+      <ToastContainer position='bottom-right' autoClose={5000} />
     </>
   )
 }
