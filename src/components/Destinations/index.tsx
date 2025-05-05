@@ -90,7 +90,7 @@ const BhutanDestinations = () => {
 
   return (
     <Box p={[4, 8]}>
-      <Heading mb={4} textAlign="center" color="black">
+      <Heading mb={4} textAlign="center" color="black" fontSize={{ base: "2xl", md: "3xl" }} fontWeight="bold">
         Top Destinations in Bhutan
       </Heading>
 
