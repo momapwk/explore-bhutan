@@ -12,8 +12,13 @@ const ContactForm = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!formRef.current) return
-
-    emailjs.sendForm("service_xky3dqu", "template_7ypyrla", formRef.current, "o6l8r1UilREkWtFPn")
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formRef.current!,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    
       .then(() => {
         toast.success("Message sent successfully!")
         formRef.current?.reset()
@@ -25,7 +30,7 @@ const ContactForm = () => {
 
   return (
     <MotionBox
-      bg="cyan.200"
+      bg="lightgrey"
       p={10}
       borderRadius="md"
       shadow="lg"
