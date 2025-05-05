@@ -1,10 +1,17 @@
 import { Box } from "@chakra-ui/react"
-import Festival from "../components/Festival/indes"
+import DromchoePage from "../components/DromchoePage"
+import MaskDance from "../components/MaskDance"
+import Dance from "../components/Dance"
+import OverAllCultureFestivals from "../components/OverAllCultureFestivalls"
 
 const CultureFestivals = () => {
   return (
     <Box>
-      <Festival/>
+      <DromchoePage/>
+      <MaskDance/>
+      <Dance/>
+      <OverAllCultureFestivals/>
+
     </Box>
   )
 }
