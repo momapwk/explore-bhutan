@@ -92,4 +92,4 @@ const Dance = () => {
   );
 };
 
-export default Dance;
+export default Dance
