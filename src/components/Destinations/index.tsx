@@ -9,6 +9,16 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { Image } from "@chakra-ui/react";
+import paro from '../../assets/Image/paro.jpg'
+import PD from '../../assets/Image/PD.jpg'
+import Tt from '../../assets/Image/Tt.jpg'
+import pv from '../../assets/Image/pv.jpg'
+import bumthangv from '../../assets/Image/bumthangv.jpg'
+import haav from '../../assets/Image/haav.jpg'
+import trongsaD from '../../assets/Image/trongsaD.jpg'
+import lhuentse from '../../assets/Image/lhuentse.jpg'
+import noimage from '../../assets/Image/noimage.avif'
+import chelelapass from '../../assets/Image/chelelapass.jpg'
 
 interface Destination {
   name: string;
@@ -19,58 +29,55 @@ interface Destination {
 const destinations: Destination[] = [
   {
     name: "Paro Taktsang",
-
-    image: "src/assets/Image/paro.jpg ",
-
-
+    image: paro,
     description:
       "Also known as Tiger’s Nest Monastery, perched on a cliffside in the Paro Valley.",
   },
   {
     name: "Punakha Dzong",
-    image: "src/assets/Image/PD.jpg ",
+    image: PD,
     description:
       "A stunning fortress at the confluence of the Pho Chhu and Mo Chhu rivers.",
   },
   {
     name: "Thimphu",
-    image: "src/assets/Image/Tt.jpg ",
+    image: Tt,
     description:
       "Bhutan’s capital city, home to cultural landmarks and modern life mixed with tradition.",
   },
   {
     name: "Phobjikha Valley",
-    image: "src/assets/Image/pv.jpg ",
+    image: pv,
     description:
       "A serene glacial valley known for the endangered black-necked cranes.",
   },
   {
     name: "Bumthang Valley",
-    image: "src/assets/Image/bumthangv.jpg ",
+    image: bumthangv,
     description:
       "The spiritual heartland of Bhutan with ancient temples and beautiful landscapes.",
   },
   {
     name: "Haa Valley",
-    image: "src/assets/Image/haav.jpg",
+    image: haav,
     description:
       "A quiet, less-traveled valley known for its natural beauty and authentic Bhutanese culture.",
   },
   {
     name: "Trongsa Dzong",
-    image: "src/assets/Image/trongsaD.jpg",
+    image: trongsaD,
     description:
       "A massive and strategically located fortress in central Bhutan, offering panoramic views.",
   },
   {
     name: "Lhuentse",
-    image: "src/assets/Image/lhuentse.jpg",
+    image: lhuentse,
     description:
       "A remote and traditional region known for beautiful weavings and sacred sites.",
   },
   {
     name: "Chele La Pass",
-    image: "src/assets/Image/chelelapass.jpg",
+    image: chelelapass,
     description:
       "The highest motorable point in Bhutan, offering dramatic views of the Himalayan range.",
   },
@@ -85,7 +92,7 @@ const BhutanDestinations = () => {
 
   const noInfoDestination: Destination = {
     name: "Destination Not Found",
-    image: "src/assets/Image/noimage.avif",
+    image: noimage,
     description: "No destinations matched your search.",
   };
 

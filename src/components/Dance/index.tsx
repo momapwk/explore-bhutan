@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Highlight } from "@chakra-ui/react";
+import { Box, Heading, Text, Highlight, AspectRatio } from "@chakra-ui/react";
 
 const festivals = [
   {
@@ -26,18 +26,16 @@ const festivals = [
 const Dance = () => {
   return (
     <Box width={"90%"} mx="auto" p={5}>
-      <Box borderRadius="md" mb={4} w="100%" h={{ base: "200px", md: "400px" }}>
+      {/* Responsive YouTube Embed */}
+      <AspectRatio ratio={16 / 9} mb={6}>
         <iframe
-          width="90%"
-          height="100%"
           src="https://www.youtube.com/embed/vQmBKUhM2TU?autoplay=1&mute=1&loop=1&playlist=vQmBKUhM2TU"
-          title="YouTube video player"
-          frameBorder="0"
+          title="Bhutan Festival Dance"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          style={{ objectFit: "cover" }}
-        ></iframe>
-      </Box>
+          loading="lazy"
+        />
+      </AspectRatio>
 
       <Heading as="h1" size="xl" mb={2}>
         Discover Bhutan's unique cultural festivals

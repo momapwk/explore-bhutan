@@ -9,47 +9,60 @@ import {
   Highlight,
 } from "@chakra-ui/react";
 
+import maskImage from '../../assets/Image/mask.jpg';
+import download9Image from '../../assets/Image/download (9).jpg';
+import images6Image from '../../assets/Image/images (6).jpg';
+import phomoImage from '../../assets/Image/phomo.jpg';
+import images3Image from '../../assets/Image/images (3).jpg';
+import video7Image from '../../assets/Video/download (7).jpg';
+import danceImage from '../../assets/Image/Dance.jpeg';
+import video1Image from '../../assets/Video/images (1).jpg';
+import images2Image from '../../assets/Image/images (2).jpg';
+import mdImage from '../../assets/Image/md.jpg';
+import images5Image from '../../assets/Image/images (5).jpg';
+import download8Image from '../../assets/Image/download (8).jpg';
+import images4Image from '../../assets/Image/images (4).jpg';
+
 const festivals = [
   {
     title: "7 Days Paro Tsechu Festival Tour of Bhutan",
     date: "Apr 8–12, 2025",
-    image: "/src/assets/Image/mask.jpg",
+    image: maskImage,
     locations: "Paro - Thimphu - Punakha - Paro",
   },
   {
     title: "7 Days Thimphu Tsechu Festival of Bhutan",
     date: "Oct. 02–04, 2025",
-    image: "/src/assets/Image/download (9).jpg",
+    image: download9Image,
     locations: "Paro - Thimphu - Punakha - Paro",
   },
   {
     title:
       "7 Days Punakha Festival Tour Bhutan (2025 Drubchen & Tsechu Festivals)",
     date: "",
-    image: "/src/assets/Image/images (6).jpg",
+    image: images6Image,
     locations: "Paro - Punakha - Gangtey - Thimphu - Paro",
   },
 ];
 
-const OverAllCultureFestivals = () => {
-  const imagePaths = [
-    "/src/assets/Image/mask.jpg",
-    "/src/assets/Image/phomo.jpg",
-    "/src/assets/Image/images (3).jpg",
-    "/src/assets/Video/download (7).jpg",
-    "/src/assets/Image/Dance.jpeg",
-    "/src/assets/Video/images (1).jpg",
-    "/src/assets/Image/images (2).jpg",
-    "/src/assets/Image/md.jpg",
-    "/src/assets/Image/images (5).jpg",
-    "/src/assets/Image/download (8).jpg",
-    "/src/assets/Image/Dance.jpeg",
-    "/src/assets/Image/images (4).jpg",
-  ];
+const imagePaths = [
+  maskImage,
+  phomoImage,
+  images3Image,
+  video7Image,
+  danceImage,
+  video1Image,
+  images2Image,
+  mdImage,
+  images5Image,
+  download8Image,
+  danceImage,
+  images4Image,
+];
 
+const OverAllCultureFestivals = () => {
   return (
-    <Box width={'90'}>
-    
+    <Box width={'90%'}>
       <Box position="relative" px={4} py={6}>
         <SimpleGrid columns={{ base: 2, md: 4 }} gap={2}>
           {imagePaths.map((src, i) => (
@@ -65,7 +78,6 @@ const OverAllCultureFestivals = () => {
           ))}
         </SimpleGrid>
 
-     
         <Box
           position="absolute"
           top="50%"
@@ -83,9 +95,9 @@ const OverAllCultureFestivals = () => {
           <Heading fontSize={{ base: "lg", md: "2xl" }}>
             Over All Bhutan Tsechu Festivals
           </Heading>
-          <Box flex="2">
+          <Box flex="2" mt={2}>
             <Image
-              src="/src/assets/Image/mask.jpg"
+              src={maskImage}
               alt="Bhutanese festival mask dance"
               borderRadius="lg"
               objectFit="cover"
@@ -94,7 +106,6 @@ const OverAllCultureFestivals = () => {
             />
           </Box>
         </Box>
-       
       </Box>
 
       <Box p={10} bg="gray.50">
@@ -135,7 +146,6 @@ const OverAllCultureFestivals = () => {
         </Text>
       </Box>
 
-      
       <Box p={10} bg="gray.50">
         <Heading as="h2" size="xl" mb={4}>
           Bhutan Festivals
@@ -162,7 +172,6 @@ const OverAllCultureFestivals = () => {
           Festival and Punakha Drubchen.
         </Text>
 
-      
         <SimpleGrid columns={{ base: 1, md: 3 }} gap={6}>
           {festivals.map((festival, index) => (
             <Box
@@ -184,7 +193,7 @@ const OverAllCultureFestivals = () => {
               </Box>
 
               <Box p={4}>
-                <VStack  gap={2}>
+                <VStack gap={2}>
                   <Text fontWeight="bold">{festival.title}</Text>
                   {festival.date && (
                     <Text fontSize="sm">{festival.date}</Text>
@@ -202,4 +211,4 @@ const OverAllCultureFestivals = () => {
   );
 };
 
-export default OverAllCultureFestivals
+export default OverAllCultureFestivals;

@@ -7,13 +7,20 @@ import {
   VStack,
 } from '@chakra-ui/react';
 
+import dc from '../../assets/Image/dc.jpg';
+import field from '../../assets/Image/download (6).jpg';
+import throne from '../../assets/Image/Ac.jpg';
+import firstFloor from '../../assets/Image/download (2).jpg';
+import pazap from '../../assets/Image/download (1).jpg';
+import group from '../../assets/Image/download.jpg';
+
 const imageData = [
-  { src: '/src/assets/Image/dc.jpg', label: 'Scene of Pazap Entering' },
-  { src: '/src/assets/Image/download (6).jpg', label: 'Scene of Pazaps at the Field' },
-  { src: '/src/assets/Image/Ac.jpg', label: 'Scene of Pazaps at the Throne' },
-  { src: '/src/assets/Image/download (2).jpg', label: 'Scene of Pazaps at First Floor' },
-  { src: '/src/assets/Image/download (1).jpg', label: 'Scene of Pazap' },
-  { src: '/src/assets/Image/download.jpg', label: "Pazap's Entertaining Group" },
+  { src: dc, label: 'Scene of Pazap Entering' },
+  { src: field, label: 'Scene of Pazaps at the Field' },
+  { src: throne, label: 'Scene of Pazaps at the Throne' },
+  { src: firstFloor, label: 'Scene of Pazaps at First Floor' },
+  { src: pazap, label: 'Scene of Pazap' },
+  { src: group, label: "Pazap's Entertaining Group" },
 ];
 
 const DromchoePage = () => {
@@ -25,7 +32,7 @@ const DromchoePage = () => {
           The Great Punakha Dromchoe
         </Text>
 
-        <Text fontSize="lg" textAlign="justify" >
+        <Text fontSize="lg" textAlign="justify">
           The Punakha Dromchoe is a dramatic recreation of a 17th-century battle against the Tibetan army.
           Local militia men, known as <strong>“pazaps”</strong>, dress in traditional battle gear to reenact this historic event.
         </Text>
@@ -61,4 +68,4 @@ const DromchoePage = () => {
   );
 };
 
-export default DromchoePage   
+export default DromchoePage;
